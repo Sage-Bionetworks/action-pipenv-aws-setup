@@ -13,7 +13,7 @@ inputs:
   python_version:
     description: version of python to use
     required: false
-    default: 3.8
+    default: 3.10
 
   aws_access_key_id:
     description: access key id of the ci user
@@ -34,10 +34,10 @@ runs:
   steps:
 
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ inputs.python_version }}
 

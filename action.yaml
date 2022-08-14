@@ -13,7 +13,7 @@ inputs:
   python_version:
     description: version of python to use
     required: false
-    default: 3.10
+    default: '3.10'
 
   aws_access_key_id:
     description: access key id of the ci user
@@ -43,7 +43,9 @@ runs:
 
       - name: Install pipenv
         shell: bash
-        run: python -m pip install pipenv
+        run: |
+          python -m pip install --user pipenv
+          pipenv --version
 
       - name: Install dependencies
         env:
@@ -60,3 +62,4 @@ runs:
           aws-region: us-east-1
           role-to-assume: ${{ inputs.role_to_assume }}
           role-duration-seconds: 1200
+

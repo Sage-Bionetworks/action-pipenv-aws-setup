@@ -20,7 +20,7 @@ You should update your action references to v3 once you have setup OIDC integrat
 
 Other minor changes include making more inputs for user to specify when implementing this action into their Github (GH) Actions workflow as well as upgrading all actions' versions.
 
-## Usage
+## Getting Started
 
 ### For v3 - present of this action
 
@@ -44,3 +44,7 @@ Highly recommended to update to using OIDC integration.
 - See [PR #551](https://github.com/Sage-Bionetworks-IT/organizations-infra/pull/551) as an example for how the GH action `configure-aws-credentials` was previously integrated with static IAM credentials by using repository secrets.
 - See [Encrypted Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on how to add secrets to your github repo
 - See [Assume role with static IAM credentials in repository secrets](https://github.com/aws-actions/configure-aws-credentials#assumerole-with-static-iam-credentials-in-repository-secrets) for an example of an implementation to allow for role assuming using secrets.
+
+### Contributing
+
+Read through the [contribution guidelines](CONTRIBUTING.md) for more information.

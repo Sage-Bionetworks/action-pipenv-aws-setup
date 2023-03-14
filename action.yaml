@@ -61,7 +61,7 @@ runs:
           pipenv install --dev
 
       - name: Assume AWS role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-region: ${{ inputs.aws_region }}
           role-to-assume: ${{ inputs.role_to_assume }}

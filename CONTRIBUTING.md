@@ -21,11 +21,9 @@ Then make your changes!
 
 ### Testing
 
-In order to test the change(s), you can follow one of the below options for this section relevant to the fork or feature branch option you selected above once you make your changes: [adding-an-action-to-your-workflow](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions#adding-an-action-to-your-workflow)
+In order to test the change(s) by using the action in your own Github Actions workflow, you can follow one of the below options for this section relevant to the fork or feature branch option you selected above once you make your changes: [adding-an-action-to-your-workflow](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions#adding-an-action-to-your-workflow)
 
 ### Tagging Procedure
-
-Follow gitflow best practices as linked above.
 
 1. Always merge all new features into your feature branch/fork
 1. After initial features are ready in your feature branch/fork, create a PR
